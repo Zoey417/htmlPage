@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+</head>
+<script type="text/javascript">
+    $(function () {
+    	// 语言切换按钮
+        $(".head .button").hover(function(){
+            $(".board").fadeIn();
+        },function(){
+            $(".board").fadeOut();
+        });
+        $(".board div").click(function(){
+           $(".board div").removeClass("selected");
+            $(this).addClass("selected");
+            $(".head .button span").text($(this).text());
+              $(".board").fadeOut();
+        });
+        // tabs切换
+        $(".textContainer div").click(function(){
+        		$(".textContainer div").removeClass("selected");
+        		$(this).addClass("selected");
+        		if($(this).hasClass("tab1")){
+        			$(".tabsBody .tab1").show();
+        			$(".tabsBody .tab2").hide();
+        		}
+        		else{
+					$(".tabsBody .tab1").hide();
+        			$(".tabsBody .tab2").show();
+        		}
+        	});
+    });
+</script>
+<body>
+  <div class="head widthControlContainer">
+    	 <img src="images/logo.png"/>
+        <div class="headTitle">世界遗产空间数据库</div>
+        <div class="button">
+            <span>中文</span>
+            <div class="arrow"></div>
+               <div class="board">
+                <div class="selected">中文</div>
+                <div>English</div>
+            </div>
+        </div>
+
+            <div class="clear"></div>
+    </div>
+    <div class="img">
+        <img src="images/subTitle.jpg"/>
+    </div>
+    <div class="tabsPage">
+        <div class="tabsHead">
+        	<div class="textContainer">
+        		  <div class="tab1">关于HIST</div>
+            <div class="tab2 selected">关于系统</div>
+        	</div>
+          
+        </div>
+        <div class="widthControlContainer">
+            <div class="tabsBody">
+            	<div class="tab1"></div>
+            	<div class="tab2">
+                <div class="leftContainer">
+                    <div class="title">系统介绍</div>
+                    <div class="introduce">公司法能够激发号公司发给你发的回顾 金啥都不干号U盾尚方宝剑护士 公司法能够激发号公司发给你发的回顾 金啥都不干号U盾尚方宝剑护士 机构负事故公司法能够激发号公司发给你发的回顾 金啥都不干号U盾尚方宝剑护士
+                        机构负事故机构负事故 </div>
+                </div>
+                <div class="rightContainer">
+                    <img src="images/childTab.jpg" />
+                </div>
+                <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom">
+    	<div class="widthControlContainer">
+	        <div class="title">GIS数据</div>
+	        <div class="subTitle">我们提供多种影像数据的下载</div>
+	        <div class="cardContainer">
+	            <div class="card">
+	                <div class="imgContainer">
+	                    <img src="images/1.jpg" />
+	                    <img src="images/1.jpg" />
+	                    <img src="images/1.jpg" />
+	                </div>
+
+	                <div class="content">
+	                    不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长
+	                    号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长
+	                    号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长
+	                    号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长
+	                    号吧号阿比 不号还上班长 号吧号阿比
+	                </div>
+	                <div class="iconPlus">+</div>
+	            </div>
+	            <div class="card">
+	                <div class="imgContainer">
+	                    <img src="images/1.jpg" />
+	                </div>
+
+	                <div class="content">
+	                    不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长
+	                    号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长
+	                    号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长
+	                    号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长
+	                    号吧号阿比 不号还上班长 号吧号阿比
+	                </div>
+	                <div class="iconPlus">+</div>
+	            </div>
+	            <div class="card">
+	                <div class="imgContainer">
+	                    <img src="images/1.jpg" />
+	                </div>
+
+	                <div class="content">
+	                    不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长
+	                    号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长
+	                    号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长
+	                    号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长 号吧号阿比 不号还上班长
+	                    号吧号阿比 不号还上班长 号吧号阿比
+	                </div>
+	                <div class="iconPlus">+</div>
+	            </div>
+	            <div class="clear"></div>
+	        </div>
+	        <div class="button">
+	        加载更多+</div>
+        </div>
+    </div>
+    <div class="foot">
+        <div>Copyright&copy;中国科学院遥感与数字地球研究所&nbsp;&nbsp;地址：海淀区邓庄南路9号&nbsp;&nbsp;邮编：100094</div>
+        <div>技术支持：江苏瀚远科技股份有限公司&nbsp;&nbsp;邮箱：hr@hanwintech.com&nbsp;&nbsp;电话：0512-62882228</div>
+        <div>备案号：京ICP备05080539号京公网110402500008号</div>
+    </div>
+</body>
+
+</html>

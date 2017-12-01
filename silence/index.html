@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slides.js"></script>
+
+</head>
+<style>
+    /*	.aa{
+		width:100px;
+		height: 500px;
+		background:red;
+		position: absolute;
+		top: 30px;
+	}*/
+</style>
+<script type="text/javascript">
+    $(function () {
+        $("#yxh_article").width("100%");
+        $(".head .button").hover(function(){
+            $(".board").fadeIn();
+        },function(){
+            $(".board").fadeOut();
+        });
+        $(".board div").click(function(){
+           $(".board div").removeClass("selected");
+            $(this).addClass("selected");
+            $(".head .button span").text($(this).text());
+              $(".board").fadeOut();
+        });
+    });
+</script>
+
+<body>
+  <div class="head">
+        <img src="images/logo.png"/>
+        <div class="headTitle">世界遗产空间数据库</div>
+        <div class="button">
+            <span>中文</span>
+            <div class="arrow"></div>
+               <div class="board">
+                <div class="selected">中文</div>
+                <div>English</div>
+            </div>
+        </div>
+
+            <div class="clear"></div>
+    </div>
+
+    <div id="yxh_article">
+        <div class="maskHelp">
+            <div class="slider_box" id="slider_name">
+                <ul class="silder_con">
+                    <li class="silder_panel">
+                        <img style="min-width:1500px;" src="images/1.jpg" />
+                        <div class="loginContainer">
+                            <div class="loginTitle">登录</div>
+                            <div class="userName">
+                                <img src="images/user.png" />
+                                <input placeholder="用户名" />
+                            </div>
+                            <div class="userPWD">
+                                <img src="images/lock.png" />
+                                <input placeholder="密码" />
+                            </div>
+                            <div class="loginButton">登录</div>
+                            <div class="loginNoName">匿名登录</div>
+                            <div class="joinUs">加入我们</div>
+                        </div>
+                    </li>
+
+                    <li class="silder_panel">
+                        <img style="min-width:1500px;" src="images/2.jpg" />
+                        <div class="second svg">
+                        	<div class="secondTitle">关于系统</div>
+                        	<div class="des">
+                        		以吴哥遗产地为试点，以建设全球遗产地空间数据管理与发布平台为目标，在多源、多尺度遥感数据获取基础上，开展吴哥遗产地多源空间数据整合加工以及空间数据管理与分布等关键技术研究。
+                        	</div>
+                        	<!-- <div class="button">了解详细+</div> -->
+                                   <div class="button">
+                <svg>
+                        <rect height="40" width="130" fill="transparent" />
+                </svg>
+                <span>加载更多+</span>
+            </div>
+                        </div>
+                    </li>
+                    <li class="silder_panel">
+                        <img  style="min-width:1500px;"src="images/3.jpg" />
+                        <div class="third svg">
+							<div class="thirdTitle">关于HIST</div>
+                        	<div class="des">
+                        	联合国教科文组织国际自然与文化遗产空间技术中心
+                        	</div>
+                        	<!-- <div class="button">解详细+</div> -->
+                                   <div class="button">
+                <svg>
+                        <rect height="40" width="130" fill="transparent" />
+                </svg>
+                <span>加载更多+</span>
+            </div>
+                        </div>
+                    </li>
+                    <li class="silder_panel">
+                        <img style="min-width:1500px;" src="images/4.jpg" />
+                        <div class="four svg">
+                            <div class="fourTitle">合作机构</div>
+                                <!-- <div class="button">解详细+</div> -->       <div class="button">
+                <svg>
+                        <rect height="40" width="130" fill="transparent" />
+                </svg>
+                <span>加载更多+</span>
+            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="mask">
+                <ul class="silder_nav dec">
+                    <li class="current">
+                        <a >
+                            <img src="images/01.jpg" width="110" height="48" />
+                        </a>
+                    </li>
+                    <li>
+                        <a >
+                            <img src="images/02.jpg" width="110" height="48" />
+                        </a>
+                    </li>
+                    <li>
+                        <a >
+                            <img src="images/03.jpg" width="110" height="48" />
+                        </a>
+                    </li>
+                    <li>
+                        <a >
+                            <img src="images/04.jpg" width="110" height="48" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="foot">
+        <div>Copyright&copy;中国科学院遥感与数字地球研究所&nbsp;&nbsp;地址：海淀区邓庄南路9号&nbsp;&nbsp;邮编：100094</div>
+        <div>技术支持：江苏瀚远科技股份有限公司&nbsp;&nbsp;邮箱：hr@hanwintech.com&nbsp;&nbsp;电话：0512-62882228</div>
+        <div>备案号：京ICP备05080539号京公网110402500008号</div>
+    </div>
+</body>
+
+</html>

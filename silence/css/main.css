@@ -1,0 +1,413 @@
+*{font-family:"微软雅黑";font-size:14px;padding: 0;margin: 0;}
+body{
+	overflow-x: hidden;
+}
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #b1b1b1;
+}
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #b1b1b1;
+}
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #b1b1b1;
+}
+input::-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #b1b1b1;
+}
+.clear{
+	clear: both;
+}
+.foot{
+	text-align: center;
+	color:#868686;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	line-height: 25px;
+}
+
+/*index页面*/
+
+.loginContainer{
+	width: 259PX;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	left: 50%;
+	right: 50%;
+	margin-top: -180px;
+	margin-left: -190px;
+	background: rgba(234,231,230,0.9);
+	padding: 32px 60px;
+	padding-top: 28px;
+
+}
+.loginContainer img{
+	width: 22px;
+	height: 22px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 12px;
+}
+.loginContainer input{
+	border: none;
+outline: none;
+width: 180px;
+margin-top:7px;
+margin-left: 10px;
+font-size: 14px;
+
+}
+.loginContainer .loginTitle{
+	font-size: 24px;
+	color: #4c4c4c;
+	margin-bottom: 18px;
+}
+.loginContainer .userName,.loginContainer .userPWD{
+width: 259px;
+height: 35px;
+background: #fff;
+margin-bottom: 13px;
+}
+.loginButton,.loginNoName{
+	width: 259px;
+height: 35px;
+border-radius: 18px;
+line-height: 35px;
+text-align: center;
+font-size: 18px;
+margin-bottom: 16px;
+}
+.loginButton{
+background: #3291e9;
+color: #fff;
+margin-top: 33px;
+cursor: pointer;
+}
+.loginButton:hover{
+	background:#1583e8;
+}
+.loginNoName{
+border: 1px solid #3291e9;
+color: #3291e9;
+cursor: pointer;
+}
+.loginNoName:hover{
+	border: 1px solid #0c579c;
+color: #0c579c;
+}
+.loginContainer .joinUs{
+	text-align: center;
+	font-size: 14px;
+	color: #f87c38;
+	margin-top: 25px;
+}
+.loginContainer .joinUs:hover{
+	color:#0074df;
+	cursor: pointer;
+
+}
+.second,.third,.four{
+	width: 1120px;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	right: 50%;
+	margin-left: -560px;
+	color: #fff;
+	text-align: left;
+}
+.third{
+	top: 180px;
+}
+.four{
+	text-align: center;
+	top: 200px;
+}
+
+.second .secondTitle{
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+.third .thirdTitle{
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.four .fourTitle{
+		font-size: 30px;
+	margin-bottom: 50px;
+}
+.second .des,.third .des{ 
+	line-height: 34px;
+	width: 510px;
+	font-size: 15px;
+}
+.second .button,.third .button,
+.four .button,.bottom .button{
+	width: 120px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	/*border: 1px solid #ccc;*/
+	margin-top: 50px;
+	cursor: pointer;
+	font-size: 15px;
+}
+.bottom .button{
+border: 1px solid #ccc;
+background: #fff;
+color:#868686;
+margin:60px auto 20px;
+}
+.bottom .button:hover{
+	color: #f08a12;
+	border-color: #f08a12;
+}
+.four .button{
+	margin: 20px auto;
+}
+/*child页面*/
+.head{
+	width:1120px;
+	margin: 20px auto 0;
+	text-align:left;
+}
+
+.head img{
+	float: left;
+}
+.head .headTitle{
+	float: left;
+	font-size: 28px;
+	margin-top: 15px;
+	margin-left: 5px;
+}
+.head .button{
+float: right;
+	margin-top: 15px;
+	cursor: pointer;
+	position: relative;
+	background-image: url("../images/language.png");
+	width: 103px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+}
+.head .arrow{
+	width: 10px;
+	height: 5px;
+		background-image: url("../images/arrow.png");
+		position: absolute;
+		right: 16px;
+		top: 20px;
+}
+.head .board{
+	width:100px;
+	height: 65px;
+	background:#fff;
+	border: 1px solid #ddd;
+	box-shadow: 1px 1px 1px #ddd,-1px -1px 1px #ddd;
+	border-radius: 10px;
+	position: absolute;
+margin-top: -5px;
+z-index: 2;
+display: none;
+
+}
+.head .button span{
+	color:#868686;
+}
+.board .selected{
+	color:#3291e9;
+}
+.board div{
+	height: 25px;
+}
+.widthControlContainer{
+	width:1201px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0 30px 56px;
+
+}
+.head.widthControlContainer{
+		padding-right: 42px;
+		width:1159px;
+}
+.tabsPage .widthControlContainer{
+	padding-right: 42px;
+		width:1159px;
+		padding-top: 40px;
+}
+.tabsPage{
+	margin-top: 20px;
+}
+.tabsHead{
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+.tabsPage .textContainer{
+	width: 355px;
+	margin:0 auto;
+}
+.tabsPage .textContainer div{
+	padding: 0 5px;
+	height:30px;
+	display: inline-block;
+	margin-right: 100px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.tabsPage .textContainer div:hover{
+	color: #f08a12;
+}
+.textContainer div.selected{
+	border-bottom: 2px solid #f08a12;
+}
+.tabsBody{
+	text-align: center;
+	min-height: 400px;
+}
+.tabsBody .introduce{
+	line-height: 25px;
+}
+
+.tabsBody .leftContainer{
+	float: left;
+ width: 510px;
+ margin-right: 25px;
+ text-align: left;
+}
+ .tabsBody .rightContainer{
+ width: 605px;
+ height: 400px;
+ float: right;
+ text-align: right;
+ }
+ .bottom{
+ 	text-align: center;
+ 	height: auto;
+ 	background: #f3f3f3;
+
+ }
+ .bottom .card{
+	float:left;
+}
+
+ .bottom .cardContainer{
+
+ }
+.title{
+ 	font-size: 21px;
+ 	margin-bottom: 25px;
+ }
+ .bottom .title{
+ 	margin-top: 25px;
+ }
+ .bottom .subTitle{
+ 	color: #307DC1;
+ 	margin-bottom: 30px;
+ 	cursor: pointer;
+ }
+ .bottom .card{
+ 	width: 370px;
+ 	height: 400px;
+ 	display: inline-block;
+ 	margin-right: 25px;
+ 	background: #fff;
+ 	cursor: pointer;
+ }
+ .bottom .iconPlus{
+ 	text-align: right;
+ 	font-size: 17px;
+ 	font-weight: bold;
+ 	margin-right: 20px;
+ 	background: #fff;
+ }
+.bottom .imgContainer{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.bottom .cardContainer{
+height: auto;
+}
+
+.content{position: relative; line-height: 26px;overflow: hidden;text-align: left;height:123px;margin: 20px 16px 20px 24px;color:#747474;}
+/*.content::after{content: "..."; position: absolute; bottom: 0; right: 0; padding-left: 40px;
+background: -webkit-linear-gradient(left, transparent, #fff 55%);
+background: -o-linear-gradient(right, transparent, #fff 55%);
+background: -moz-linear-gradient(right, transparent, #fff 55%);
+background: linear-gradient(to right, transparent, #fff 55%);
+}
+*/
+.svg .button {
+		text-decoration: none;
+		color: #fff;
+		position: relative;
+		display: inline-block;
+		width: 130px;
+		height: 40px;
+		margin: 50px 0 0 0;
+		overflow: hidden;
+}
+
+.svg .button:hover rect {
+		animation: draw1 .75s linear forwards;
+}
+
+.svg .button rect {
+		position: absolute;
+		top: 0;
+		left: 0;
+		stroke-width: 1px;
+		stroke-dashoffset: 400px;
+		stroke: #fff;
+}
+
+.svg .button span {
+		color: #fff;
+		width: 130px;
+		height: 40px;
+		display: inline-block;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		top: 0;
+		line-height: 40px;
+		transition: all .2s linear;
+}
+
+.svg .button span:hover {
+		color: #3291e9;
+		background: #fff;
+		transition: all 1s cubic-bezier(1.25s 0, 1.15, 1, 1);
+		transition-delay: .5s;
+}
+
+.svg .button:nth-child(1):hover rect {
+		animation: draw1 .75s linear forwards;
+}
+
+
+@keyframes draw1 {
+		0% {
+				stroke-dasharray: 300;
+				stroke-dashoffset: 700;
+				stroke-width: 4px;
+		}
+		75% {
+				stroke-dasharray: 900;
+				stroke-width: 1px;
+		}
+		100% {
+				stroke-dasharray: 900;
+				stroke-width: 1px;
+		}
+}
+
